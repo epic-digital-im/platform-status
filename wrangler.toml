@@ -1,16 +1,17 @@
-name = "cf-workers-status-page"
+name = "platform-status"
 workers_dev = true
-account_id = ""
+account_id = "63396a5b2b279efdc0e1618233dcdc17"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 compatibility_date = "2021-07-23"
+main = "index.js"
 
 [triggers]
 crons = ["* * * * *"]
 
 [site]
 bucket = "out"
-entry-point = "./"
+
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
