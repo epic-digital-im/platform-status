@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'System Status'
   url: 'https://status.omerta.ai' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -21,8 +21,8 @@ monitors:
     url: 'https://api.omerta.ai/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
 
   - id: api-qeventsdashboard-com # unique identifier
     name: api.qeventsdashboard.com
@@ -30,8 +30,8 @@ monitors:
     url: 'https://api.qeventsdashboard.com/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
 
   - id: api-paysafecheckin-com # unique identifier
     name: api.paysafecheckin.com
@@ -39,5 +39,5 @@ monitors:
     url: 'https://api.paysafecheckin.com/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
