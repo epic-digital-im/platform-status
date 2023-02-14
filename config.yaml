@@ -16,28 +16,28 @@ settings:
 
 monitors:
   - id: omerta # unique identifier
-    name: api.omerta.ai
+    name: OMERTA
     description: 'Omerta' # default=empty
     url: 'https://api.omerta.ai/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: api-qeventsdashboard-com # unique identifier
-    name: api.qeventsdashboard.com
+    name: QTI
     description: 'QTI Event Dashboard' # default=empty
     url: 'https://api.qeventsdashboard.com/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
   - id: api-paysafecheckin-com # unique identifier
-    name: api.paysafecheckin.com
+    name: PAYSAFE
     description: 'QTI Event Dashboard' # default=empty
     url: 'https://api.paysafecheckin.com/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
