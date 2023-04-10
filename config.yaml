@@ -26,7 +26,7 @@ monitors:
 
   - id: api-qeventsdashboard-com # unique identifier
     name: QTI
-    description: 'QTI Event Dashboard' # default=empty
+    description: 'QTI API' # default=empty
     url: 'https://api.qeventsdashboard.com/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -35,8 +35,8 @@ monitors:
 
   - id: api-paysafecheckin-com # unique identifier
     name: PAYSAFE
-    description: 'QTI Event Dashboard' # default=empty
-    url: 'https://api.paysafecheckin.com/parse/health' # URL to fetch
+    description: 'Paysafe API' # default=empty
+    url: 'https://ps-api.eventcheckin.online/parse/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
